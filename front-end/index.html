@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List</title>
+    <!-- <link rel="stylesheet" href="admin.css" /> -->
+    <link rel="stylesheet" href="./css/admin.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <script src="./js/admin.js"></script>
+
+  </head>
+  <body>
+    <div class="card">
+      <div class="admin-container">
+        <h1>Minhas tarefas</h1>
+
+        <form class="form" onsubmit="handleRegister(event)">
+          <textarea
+            placeholder="Digite sua Tarefa..."
+            id="tarefaInput"
+          ></textarea>
+          <button class="btn-register" type="submit" id="btnRegistrar">
+            Registrar tarefa
+          </button>
+        </form>
+
+        <div id="tarefasContainer">
+          <script>
+            if (typeof tarefas !== "undefined" && tarefas.length > 0) {
+              document.write("<h2>Tarefas:</h2>");
+              document.write("<ul id='tarefasLista'></ul>");
+              document.write(
+                "<button id='btnExcluirTodas'>Excluir Todas as Tarefas</button>"
+              );
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

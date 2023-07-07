@@ -37,7 +37,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             while ($row = $result->fetch_assoc()) {
                 $tarefas[] = $row['tarefa'];
             }
-
             // Retorna as tarefas como JSON
             echo json_encode($tarefas);
         } else {

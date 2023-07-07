@@ -1,0 +1,168 @@
+body {
+  background-color: #fbfbf8;
+}
+
+textarea,
+ul {
+  list-style-type: none;
+}
+
+.card {
+  background-color: #dad7d7;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin: 16px;
+}
+
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.admin-container h1 {
+  margin-bottom: 28px;
+}
+
+#tarefaInput {
+  width: 40vw;
+  height: 40px;
+  margin-right: 8px;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+#tarefasContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 0;
+  justify-content: center;
+}
+
+#tarefasContainer h2 {
+  margin: 0;
+}
+
+.task-textarea.textarea-tarefa {
+  width: 50vw;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.btn-register {
+  margin-bottom: 28px;
+  margin-top: -10px;
+  background-color: green;
+  color: white;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.task-buttons {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -50px;
+}
+.task-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -10px;
+}
+
+.task-button {
+  margin-right: 8px;
+  border: 0;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: blue;
+  margin-left: 8px;
+  color: #fff;
+}
+
+.delete-button {
+  background-color: red;
+  color: #fff;
+}
+.delete-button-all {
+  background-color: grey;
+  color: #fff;
+}
+
+.list {
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(18, 18, 18, 0.38);
+  border-radius: 4px;
+  margin-bottom: 12px;
+  justify-content: center;
+  padding: 14px 8px;
+  margin-bottom: -70px;
+  text-align: center;
+}
+
+.list p {
+  margin-bottom: 8px;
+}
+
+.list-item {
+  text-align: left;
+}
+
+.list button {
+  margin-right: 8px;
+  border: 0;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.btn-concluir {
+  color: #ffcc23;
+  background-color: transparent;
+}
+
+.btn-delete {
+  color: #ff3923;
+  background-color: transparent;
+}
+
+.btn-logout {
+  position: fixed;
+  bottom: 6%;
+  left: 4%;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  border: 0;
+  font-weight: bold;
+  background-color: rgba(219, 38, 41, 0.35);
+  color: #fafafa;
+  transition: all 0.5s;
+}
+
+.btn-logout:hover {
+  background-color: rgba(219, 38, 41, 1);
+  color: #fff;
+}
