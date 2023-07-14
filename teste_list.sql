@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07/07/2023 às 08:21
--- Versão do servidor: 10.4.28-MariaDB
--- Versão do PHP: 8.2.4
+-- Tempo de geração: 14-Jul-2023 às 19:48
+-- Versão do servidor: 10.4.25-MariaDB
+-- versão do PHP: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,40 +18,48 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `todo_list_test`
+-- Banco de dados: `teste_list`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tarefas`
+-- Estrutura da tabela `tarefas`
 --
 
 CREATE TABLE `tarefas` (
   `id` int(11) NOT NULL,
-  `descricao` varchar(255) DEFAULT NULL,
+  `tarefa` varchar(255) DEFAULT NULL,
   `concluido` int(11) NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `tarefas`
+--
+
+INSERT INTO `tarefas` (`id`, `tarefa`, `concluido`) VALUES
+(3, 'outro teste. isso é mais outro teste', 0),
+(4, 'teste 2', 0);
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices de tabela `tarefas`
+-- Índices para tabela `tarefas`
 --
 ALTER TABLE `tarefas`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT para tabelas despejadas
+-- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
 -- AUTO_INCREMENT de tabela `tarefas`
 --
 ALTER TABLE `tarefas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
