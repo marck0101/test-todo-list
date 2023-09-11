@@ -62,6 +62,13 @@ Aí dentro do `teste_list` vamos importar o arquivo chamado `tarefas`. Ali tem t
 
 A princípio com esses comandos está tudo certo para testar a conexão com o banco de dados, e o sistema já estará operacional.
 
+# Acessando banco e testando
+Para acessar o projeto e usá-lo você vai usar o seguinte link no navegador
+```
+http://127.0.0.1/testeBanco/front-end/index.html
+```
+
+# Informações adicionais
 Em caso de dúvidas, revise os passos, ou pode entrar em contato comigo através do meu portfólio, lá tem todas as formas de contato.
 ```
 https://marck0101.com.br
